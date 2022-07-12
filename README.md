@@ -8,8 +8,8 @@ In `configuration.nix` / `home.nix`:
 
 ```nix
 gfx-wrap-source = builtins.fetchurl {
-    url = "https://github.com/mihnea-s/gfx-wrap/";
-    sha256 = "";
+    url = "https://github.com/mihnea-s/gfx-wrap/archive/refs/tags/0.0.1.zip";
+    sha256 = "0i0732d6qcnij03d05mn66szfgjp4cy4gy3c5fd4k0dxjlyhcbwg";
 }
 
 gfx = pkgs.callPackage gfx-wrap-source {
