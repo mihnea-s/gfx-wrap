@@ -82,6 +82,8 @@ let
 
   wrap = wrapped: runCommand "${wrapped.pname or wrapped.name}-gfxwrapped"
     {
+      pname = wrapped.pname or null;
+      version = wrapped.version or null;
       passthru = wrapped.passthru or { };
       buildInputs = [ makeWrapper ];
     } ''
